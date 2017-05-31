@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>销售产品价格申请（调整）审批表</title>
+	<link rel="stylesheet" type="text/css" href="./cusform.css">
+</head>
+<body>
+<main>
+	<div id="cus_table">
+		<h2>销售产品价格申请（调整）审批表</h2>
+		<table>
+			<tr class="layout"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr>
+				<td class="level2" colspan="3"><span class="flag">*</span>客户名称</td>
+				<td class="cus_input" colspan="11">
+					<input type="text" name="companyName" required="required" value="">
+				</td>
+				<td class="level2" colspan="3"><span class="flag">*</span>单位代码</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="companyCode" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="5" class="level1" colspan="2">销售产品情况</td>
+				<td class="level2" colspan="3"><span class="flag">*</span>产品图号</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="productCode" required="required">
+				</td>
+				<td class="level2" colspan="3">年份</td>
+				<td class="time" colspan="3">N-2年</td>
+				<td class="time" colspan="3">N-1年</td>
+				<td class="time" colspan="3"><span class="flag">*</span>N年</td>
+			</tr>
+			<tr>
+				<td class="level2" colspan="3"><span class="flag">*</span>产品名称</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="productName" required="required" value="">
+				</td>
+				<td class="level2" colspan="3"><span class="flag">*</span>产量</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="produceN2">
+				</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="produceN1">
+				</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="produceN" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td class="level2" colspan="3"><span class="flag">*</span>配套车型</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="vehicleType" required="required">
+				</td>
+				<td class="level2" colspan="3"><span class="flag">*</span>价格<br>（不含税）</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="priceN2">
+				</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="priceN1">
+				</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="priceN" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td class="cus_content" rowspan="2" colspan="5">
+					<p class="level3">其他说明：</p>
+					<div class="parent">
+						<textarea class="cus_area" name="otherExplanation" rows="2" style="height: 48px"></textarea>
+					</div>
+				</td>
+				<td class="level2" colspan="4"><span class="flag">*</span>降价幅度</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="priceCutN2">
+				</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="priceCutN1">
+				</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="priceCutN" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td class="level2" colspan="4"><span class="flag">*</span>SSB供货比例</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="SSBN2">
+				</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="SSBN1">
+				</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="SSBN" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td class="level1" rowspan="6" colspan="2">定价理由及分析</td>
+				<td class="cus_content" rowspan="6" colspan="4">
+					<p class="level3"><span class="flag">*</span>用户意见：</p>
+					<div class="parent">
+						<textarea class="cus_area" name="userComments" rows="6" style="height: 144px" required="required"></textarea>
+					</div>
+				</td>
+				<td class="cus_content" colspan="14" rowspan="4">
+					<p class="level3"><span class="flag">*</span>项目主管意见：</p>
+					<div class="parent">
+						<textarea class="cus_area" name="proDirectorComments" rows="3" style="height: 72px" required="required"></textarea>
+					</div>
+				</td>
+			</tr>
+			<tr></tr><tr></tr><tr></tr>
+			<tr>
+				<td class="level2" colspan="3">
+					<span class="flag">*</span>
+					<div style="display: inline">
+						<select name="priceType">
+							<option value="0">请选择</option>
+							<option value="1">含税价</option>
+							<option value="2">不含税价</option>
+						</select>
+					</div>
+				</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="price" required="required">
+				</td>
+				<td class="level2" colspan="4"><span class="flag">*</span>执行日期</td>
+				<td class="cus_input" colspan="4">
+					<input type="text" name="execDate" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td class="level2" colspan="3"><span class="flag">*</span>付款条件</td>
+				<td class="cus_input" colspan="3">
+					<input type="text" name="payTerms" required="required">
+				</td>
+				<td class="level2" colspan="4"><span class="flag">*</span>申报人签字</td>
+				<td class="cus_input" colspan="4">
+					<input type="text" name="applicantSign" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td class="level1" colspan="2">主管科室</td>
+				<td class="cus_content" colspan="18">
+					<p class="level3">科经理意见：</p>
+					<div class="parent">
+						<textarea class="cus_area" name="branchMComments" rows="2" style="height: 48px"></textarea>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="level1" colspan="2">主管部门</td>
+				<td class="cus_content" colspan="18">
+					<p class="level3">部经理意见：</p>
+					<div class="parent">
+						<textarea class="cus_area" name="depMComments" rows="2" style="height: 48px"></textarea>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="level1" colspan="2">财务部</td>
+				<td class="cus_content" colspan="18">
+					<p class="level3">部经理意见：</p>
+					<div class="parent">
+						<textarea class="cus_area" name="fanMComments" rows="2" style="height: 48px"></textarea>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="level1" colspan="2" rowspan="2">领导批示</td>
+				<td class="cus_content" colspan="9">
+					<p class="level3">销售副总经理批示：</p>
+					<div class="parent">
+						<textarea class="cus_area" name="saleMComments" rows="2" style="height: 48px"></textarea>
+					</div>
+				</td>
+				<td class="cus_content" colspan="9">
+					<p class="level3">经营副总经理批示：</p>
+					<div class="parent">
+						<textarea class="cus_area" name="operMComments" rows="2" style="height: 48px"></textarea>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="cus_content" colspan="18">
+					<p class="level3">总经理批示：</p>
+					<div class="parent">
+						<textarea class="cus_area" name="GMComments" rows="2" style="height: 48px"></textarea>
+					</div>
+				</td>
+				</td>
+			</tr>
+		</table>
+		<div class="remarks">*请注明客户价格以何种结算方式为准（在不含税价或含税价后打√）</div>
+	</div>
+	<div class="btn_group">
+		<button type="button" id="clear_btn" onclick="clearAll()">清空</button>
+		<button type="button" id="clear_btn" onclick="saveAll()">保存</button>
+		<button type="button" id="print_btn" onclick="printdiv('cus_table')">打印</button>
+	</div>
+</main>
+<script type="text/javascript" src="./custom.js"></script>
+</body>
+</html>

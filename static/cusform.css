@@ -1,0 +1,132 @@
+* {
+	font-family: SimSun;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+select {
+	width: 65px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	border: none;
+	padding: 0;
+	margin: -5px;
+	outline: none;
+}
+table {
+	margin: 0 auto;
+	width: 570px;
+	border: solid 2px #000;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+table tr {
+	height: 24px;
+	border: solid 1px #000;
+}
+table tr td{
+	overflow: hidden;
+	border: solid 1px #000;
+	text-align: center;
+}
+tr.layout td {
+	width: 5%;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+}
+tr.layout {
+	height: 0;
+} 
+main {
+	margin: 50px auto;
+	width: 570px;
+}
+input {
+	display: inline-block;
+	line-height: 22px;
+	text-decoration: none;
+	margin: 0 auto;
+	border: none;
+	width: 98%;
+	height: 22px;
+	outline: none;
+}
+input:focus {
+	outline: none;
+}
+textarea.cus_area {
+	resize: none;
+	width: 98%;
+	line-height: 24px;
+	text-decoration: none;
+	border: none;
+	font-size: 14px;
+	color: #000;
+	overflow-y:hidden;
+	margin-bottom: 1px;
+}
+textarea:focus {
+	outline: none;
+}
+h2 {
+	padding: 50px 0 20px;
+	text-align: center;
+}
+p {
+	width: 98%;
+	text-align: left;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0 auto;
+}
+button {
+	margin: 0 10px;
+}
+.parent {
+	text-align: center;
+}
+.level2 {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 0 4px;
+}
+.level3 {
+	text-align: left;
+	line-height: 22px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.level1 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 0 10px;
+}
+.flag {
+	color: #f00;
+}
+.time {
+	text-align: center;
+	font-size: 14px;
+}
+.text_box {
+	font-size: 14px;
+	font-weight: 400;
+	outline: none;
+}
+.remarks {
+	text-align: center;
+	margin: 10px 0;
+	font-size: 12px;
+}
+.btn_group {
+	width: 570px;
+	margin: 0 auto;
+	text-align: right;
+}
